@@ -1,0 +1,7 @@
+services:
+  movarr:
+    container_name: movarr
+    image: ghcr.io/hollanbm/movarr:latest
+    restart: unless-stopped
+    volumes:
+      - ./config.yml:/config/config.yml:ro
